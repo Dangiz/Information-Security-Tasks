@@ -1,6 +1,9 @@
 import crc_task as task1
 import stegonagraphy_task as task2
+import simmetry_cypher as cypher
+import signature
 
-print(task1.get_control_sum('text.txt'))
-print(task2.steganograpy_uncode(task2.steganography_task_encode('text.txt', 'container.txt')))
+signature.check_files_for_signature('C:/Core/Test', '25 50 44 46')
+
+
 
