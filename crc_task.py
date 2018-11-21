@@ -4,8 +4,9 @@
 from common import *
 
 
-def get_control_sum(file_address):
-    input_string = "".join(map(string_to_binary, open(file_address, "rb").read()))
+
+def get_control_sum(string):
+    input_string = "".join(map(string_to_binary,bytes(string, 'utf-8')))
     crc_word = input_string[:8]
     input_string = input_string[8:]
     for c in input_string:

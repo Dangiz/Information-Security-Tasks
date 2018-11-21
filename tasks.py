@@ -1,9 +1,8 @@
+import hide_file
+import crc_task
 
-import signature
-#25 50 44 46 for PDF
-#pptx 50 4B 03 04
-
-signature.check_files_for_signature('C:/Users/GizatullinDA/Test', '50 4B 03 04')
+print(open("user_info.inf").readline()[:-1])
+hide_file.start()
 
 
 
